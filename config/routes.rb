@@ -1,4 +1,10 @@
 Ds::Application.routes.draw do
+  resources :cuisines
+
+  resources :food_types
+
+  resources :restaurants
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
