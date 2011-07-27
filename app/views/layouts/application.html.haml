@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title Title
+    = stylesheet_link_tag 'application.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'          
+    = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js', 'underscore-min'
+    = csrf_meta_tag
+  %body
+    .container
+      = yield
