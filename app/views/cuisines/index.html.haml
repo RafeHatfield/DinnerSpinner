@@ -1,0 +1,21 @@
+%h1 Listing cuisines
+
+%table
+  %tr
+    %th Restaurant
+    %th Food type
+    %th
+    %th
+    %th
+
+  - @cuisines.each do |cuisine|
+    %tr
+      %td= cuisine.restaurant_id
+      %td= cuisine.food_type_id
+      %td= link_to 'Show', cuisine
+      %td= link_to 'Edit', edit_cuisine_path(cuisine)
+      %td= link_to 'Destroy', cuisine, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Cuisine', new_cuisine_path

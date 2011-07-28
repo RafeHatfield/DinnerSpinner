@@ -1,0 +1,41 @@
+%h1 Listing restaurants
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th Address1
+    %th Address2
+    %th Suburb
+    %th Postcode
+    %th Open lunch
+    %th Open dinner
+    %th Open breakfast
+    %th Takeaway
+    %th Deliver
+    %th Eatin
+    %th
+    %th
+    %th
+
+  - @restaurants.each do |restaurant|
+    %tr
+      %td= restaurant.name
+      %td= restaurant.description
+      %td= restaurant.address1
+      %td= restaurant.address2
+      %td= restaurant.suburb
+      %td= restaurant.postcode
+      %td= restaurant.open_lunch
+      %td= restaurant.open_dinner
+      %td= restaurant.open_breakfast
+      %td= restaurant.takeaway
+      %td= restaurant.deliver
+      %td= restaurant.eatin
+      %td= link_to 'Show', restaurant
+      %td= link_to 'Edit', edit_restaurant_path(restaurant)
+      %td= link_to 'Destroy', restaurant, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Restaurant', new_restaurant_path

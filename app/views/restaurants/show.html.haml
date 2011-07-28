@@ -1,0 +1,42 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @restaurant.name
+%p
+  %b Description:
+  = @restaurant.description
+%p
+  %b Address1:
+  = @restaurant.address1
+%p
+  %b Address2:
+  = @restaurant.address2
+%p
+  %b Suburb:
+  = @restaurant.suburb
+%p
+  %b Postcode:
+  = @restaurant.postcode
+%p
+  %b Open lunch:
+  = @restaurant.open_lunch
+%p
+  %b Open dinner:
+  = @restaurant.open_dinner
+%p
+  %b Open breakfast:
+  = @restaurant.open_breakfast
+%p
+  %b Takeaway:
+  = @restaurant.takeaway
+%p
+  %b Deliver:
+  = @restaurant.deliver
+%p
+  %b Eatin:
+  = @restaurant.eatin
+
+= link_to 'Edit', edit_restaurant_path(@restaurant)
+\|
+= link_to 'Back', restaurants_path

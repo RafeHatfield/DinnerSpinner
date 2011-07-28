@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @food_type.name
+
+= link_to 'Edit', edit_food_type_path(@food_type)
+\|
+= link_to 'Back', food_types_path
