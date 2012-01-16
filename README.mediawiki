@@ -1,0 +1,5 @@
+= Dinner Spinner =
+
+== http://www.dinnerspinner.com ==
+
+Personal project creating a sample rails app that will do searching over local eateries and randomize the output, taking the decision making process out of dining out (based on preferences)
